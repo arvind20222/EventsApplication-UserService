@@ -19,7 +19,7 @@ RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
 # Copy the built jar
-COPY target/UserService-0.0.1-SNAPSHOT.jar app.jar
+COPY target/EventsApplication-UserService-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port (Render will assign PORT environment variable)
 EXPOSE 7001
